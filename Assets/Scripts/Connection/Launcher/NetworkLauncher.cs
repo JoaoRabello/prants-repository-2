@@ -117,7 +117,7 @@ public class NetworkLauncher : MonoBehaviourPunCallbacks
     
     public void StartGame()
     {
-        if (PhotonNetwork.CurrentRoom.PlayerCount < 2)
+        if (PhotonNetwork.CurrentRoom.PlayerCount < _minimalPlayerCountToStart)
             return;
         
         PhotonNetwork.LoadLevel(1);

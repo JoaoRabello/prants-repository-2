@@ -24,8 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cb945a3c-554c-42a3-9d65-b50418212201" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.prants/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prants/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tests/NetworkTesting/MainMenuTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tests/NetworkTesting/MainMenuTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tests/EnemyTesting/WalkerTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tests/EnemyTesting/WalkerTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/NetworkLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/NetworkLauncher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Systems/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Systems/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +60,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/PlayerListItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/RoomListItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Systems/WaveInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/Walker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Systems/WaveManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/CharacterInfo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/CharacterListItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/CharacterSelectionManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/Character/CurrentCharacterInfo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/Character/CurrentCharacter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/PlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/RoomManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/IDamageable.cs" />
@@ -72,8 +72,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/Character/CharacterSelectionManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Connection/RPC/CommonDataRPC.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/MenuRenderer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/NetworkLauncher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Menu Control/MenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/Walker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Systems/WaveManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/PlayerManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Connection/Launcher/NetworkLauncher.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1n0lQTJvyFbjMTkvnfwA6Q5QZOx" />
@@ -110,10 +113,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16228">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="16228" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -135,6 +138,7 @@
       <workItem from="1610811990532" duration="2990000" />
       <workItem from="1610845173276" duration="9244000" />
       <workItem from="1610894359677" duration="2898000" />
+      <workItem from="1610916722137" duration="3657000" />
     </task>
     <servers />
   </component>

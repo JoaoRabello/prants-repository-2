@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
+    public static WaveManager Instance;
+    
     [SerializeField] private List<WaveInfo> _waves = new List<WaveInfo>();
     [SerializeField] private Transform _spawnPoint;
 
@@ -11,12 +13,23 @@ public class WaveManager : MonoBehaviour
     private int _currentWaveIndex;
     private int _deadEnemyAmount;
     
-    //TODO: Remove this and make the enemies know how to find the player
-    [SerializeField] private GameObject _playerTarget;
+    [SerializeField] private List<GameObject> _players = new List<GameObject>();
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     
     private void Start()
     {
-        WaveInvoke(_waves[0]);
+        StartCoroutine(WaveCooldown());
     }
 
     private void WaveInvoke(WaveInfo wave)
@@ -34,8 +47,19 @@ public class WaveManager : MonoBehaviour
             enemyObject.transform.position = _spawnPoint.position + new Vector3(Random.Range(-2f, 2f), 0, Random.Range(-2f, 2f));
             
             enemySpawned.OnDieEvent += OnEnemyDied;
-            enemySpawned.SetTarget(_playerTarget);
+            enemySpawned.SetTarget(_players[0]);
         }
+    }
+
+    private IEnumerator WaveCooldown()
+    {
+        yield return new WaitForSeconds(2f);
+        WaveInvoke(_waves[0]);
+    }
+    
+    public void OnPlayerSpawned(GameObject playerObject)
+    {
+        _players.Add(playerObject);
     }
 
     private void OnEnemyDied()
