@@ -73,7 +73,10 @@ public class NetworkLauncher : MonoBehaviourPunCallbacks
     {
         MenuRenderer.Instance.SetRoomName(PhotonNetwork.CurrentRoom.Name);
 
-        _photonView.RPC("SetPlayerCharacterInfo", RpcTarget.All, PhotonNetwork.LocalPlayer.NickName, _currentCharacter.Info.Name);
+        _photonView.RPC("SetPlayerCharacterInfo", RpcTarget.AllBuffered, PhotonNetwork.LocalPlayer.NickName, _currentCharacter.Info.Name);
+        
+        MenuManager.Instance.OpenWindow("room");
+        CheckIfMinimumPlayersInRoom();
     }
 
     [PunRPC]
@@ -82,10 +85,6 @@ public class NetworkLauncher : MonoBehaviourPunCallbacks
         var playerList = PhotonNetwork.PlayerList;
 
         MenuRenderer.Instance.UpdatePlayerList(playerList);
-        
-        CheckIfMinimumPlayersInRoom();
-        
-        MenuManager.Instance.OpenWindow("room");
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
