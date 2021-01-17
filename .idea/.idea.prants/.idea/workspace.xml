@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb945a3c-554c-42a3-9d65-b50418212201" name="Default Changelist" comment="" />
+    <list default="true" id="cb945a3c-554c-42a3-9d65-b50418212201" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.prants/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prants/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tests/NetworkTesting/MainMenuTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tests/NetworkTesting/MainMenuTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,10 +110,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4596">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4596" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -130,7 +134,7 @@
       <workItem from="1610771835216" duration="1743000" />
       <workItem from="1610811990532" duration="2990000" />
       <workItem from="1610845173276" duration="9244000" />
-      <workItem from="1610894359677" duration="2862000" />
+      <workItem from="1610894359677" duration="2898000" />
     </task>
     <servers />
   </component>
