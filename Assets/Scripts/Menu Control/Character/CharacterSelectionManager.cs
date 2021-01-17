@@ -7,7 +7,7 @@ using UnityEngine;
 public class CharacterSelectionManager : MonoBehaviour
 {
     [SerializeField] private CurrentCharacter _currentCharacter;
-
+    
     public void SetCurrentCharacter(CharacterInfo characterInfo)
     {
         _currentCharacter.PlayerName = PhotonNetwork.LocalPlayer.NickName;

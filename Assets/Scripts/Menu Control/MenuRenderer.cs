@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class MenuRenderer : MonoBehaviour
 {
     public static MenuRenderer Instance;
 
+    [SerializeField] private CommonDataRPC _commonDataRPC;
     [SerializeField] private TMP_InputField _createRoomNameInputField;
     
     [SerializeField] private TMP_Text _characterNameLabel;
@@ -65,6 +67,8 @@ public class MenuRenderer : MonoBehaviour
             var newPlayer = Instantiate(_playerListItemPrefab, _playerListContainer).GetComponent<PlayerListItem>();
             
             newPlayer.SetPlayerName(player.NickName);
+            if(_commonDataRPC.PlayerCharacterDictionary.ContainsKey(player.NickName))
+                newPlayer.SetCharacterName(_commonDataRPC.PlayerCharacterDictionary[player.NickName]);
             _playerList.Add(newPlayer);
         }
     }

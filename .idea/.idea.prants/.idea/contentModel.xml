@@ -672,6 +672,9 @@
               <e p="PlayerManager.cs" t="Include" />
               <e p="RoomManager.cs" t="Include" />
             </e>
+            <e p="RPC" t="Include">
+              <e p="CommonDataRPC.cs" t="Include" />
+            </e>
           </e>
           <e p="Gameplay" t="Include">
             <e p="Enemies" t="Include">

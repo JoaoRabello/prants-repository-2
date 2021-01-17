@@ -1858,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d91261f552b484aa385c5675263e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _commonDataRPC: {fileID: 1546604937}
   _createRoomNameInputField: {fileID: 1045940659}
   _characterNameLabel: {fileID: 1073423930}
   _characterClassLabel: {fileID: 1138374054}
@@ -1880,6 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60db79d5d9b6a64da2e75ee89c606eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _commonDataRPC: {fileID: 11400000, guid: 6633b50481c974945af7dc34e03a2a28, type: 2}
   _currentCharacter: {fileID: 11400000, guid: bdd21f9337cf22d4bb5e372bb9e5d036, type: 2}
 --- !u!1 &650136160
 GameObject:
@@ -5303,7 +5305,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1546604935}
+  - component: {fileID: 1546604936}
   - component: {fileID: 1546604934}
+  - component: {fileID: 1546604937}
   m_Layer: 0
   m_Name: Network Launcher
   m_TagString: Untagged
@@ -5323,6 +5327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d53bcc12828cde43b15f0e7470b3f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _photonView: {fileID: 1546604936}
+  _currentCharacter: {fileID: 11400000, guid: bdd21f9337cf22d4bb5e372bb9e5d036, type: 2}
   _minimalPlayerCountToStart: 2
 --- !u!4 &1546604935
 Transform:
@@ -5338,6 +5344,41 @@ Transform:
   m_Father: {fileID: 1332783270}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1546604936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546604933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1546604937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546604933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c33df32abfc8140b1016f6a6df070f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _photonView: {fileID: 1546604936}
 --- !u!1 &1565042920
 GameObject:
   m_ObjectHideFlags: 0
